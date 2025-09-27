@@ -26,9 +26,9 @@ services:
     environment:
       HD_BASE_URL: "${HD_BASE_URL}"
     ports:
-      - "88:80"
-      - "4432:443"
-      - "4435:443/udp"
+      - "80:8082"
+      - "443:4431"
+      - "443:4432/udp"
     volumes:
       - ./Caddyfile:/etc/caddy/Caddyfile
       - caddy_data:/data
